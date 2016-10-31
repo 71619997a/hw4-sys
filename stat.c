@@ -16,4 +16,4 @@ int main() {
   printf("\nMode: %o", info->st_mode);
   printf("\nTime: %s", ctime(&(info->st_atime)));
   free(info);
-}
+  return 0;}
