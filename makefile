@@ -1,14 +1,14 @@
 GCC = gcc -g
 
 all: stat.c
-	$(GCC) stat.c -o out
+	$(GCC) stat.c -o out.out
 
 clean:
-	rm *.o
+	rm *.out
 	rm *~
 
 run: all
-	./out
+	./out.out
 
 debug: all
-	gdb out
+	gdb out.out
